@@ -139,6 +139,10 @@
   padding: 0;
 }
 
+.reachoutpad{
+  padding: 30px !important;
+}
+
 .form-container {
   background-color: #02173d;
   width: 100%;
@@ -221,14 +225,14 @@
   font-size: 22px;
   line-height: 33px;
   color: #7a8897;
-  text-align: left;
+  text-align: justify;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
 .reachoutwrapper {
   display: flex;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   margin-bottom: 60px;
   position: relative;
 }
@@ -348,6 +352,17 @@
 
 /* find your property */
 
+.findpad{
+  padding: 0px 30px !important;
+}
+
+.findyourunderline{
+  background-color: #00bff3;
+  width: 50px;
+  height: 10px;
+  border-radius: 10px;
+}
+
 .findpropertywrapper {
   display: flex;
   flex-direction: column;
@@ -367,7 +382,10 @@
   color: #7a8897;
   font-weight: 400;
   margin: 26px 0;
+  max-width: 680px;
+  
 }
+
 
 .imagewrappr {
   display: flex;
@@ -507,6 +525,8 @@
   line-height: 33px;
   color: #7a8897;
   text-align: center;
+  max-width: 800px;
+
 }
 
 .margins {
@@ -548,6 +568,29 @@
   max-width: 1099px;
   width: 100%;
 }
+
+@media (max-width: 1024px) {
+  .contentholder {
+    padding-top: 40px;
+  padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentholder {
+    padding-top: 30px;
+  padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contentholder {
+    padding-top: 20px;
+  padding-bottom: 20px;
+  }
+}
+
+
 
 .masklines1 {
   position: absolute;
@@ -629,24 +672,24 @@
 
 @media (max-width: 1024px) {
   .featuredproperty {
-    margin-top: 200px !important ;
+    margin-top: 300px !important ;
   }
 }
 
 @media (max-width: 768px) {
   .featuredproperty {
-    margin-top: 500px !important;
+    margin-top: 150px !important;
   }
 }
 
 @media (max-width: 480px) {
   .featuredproperty {
-    margin-top: 480px !important;
+    margin-top: 100px !important;
   }
 }
 @media (max-width: 372px) {
   .featuredproperty {
-    margin-top: 450px !important;
+    margin-top: 70px !important;
   }
 }
 
@@ -677,6 +720,8 @@
   line-height: 33px;
   font-weight: 400;
   color: #7a8897;
+  max-width: 650px;
+  text-align: center;
 }
 
 .faeturemargin {
@@ -730,7 +775,8 @@
   }
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 769px) {
   .carousel-inner .carousel-item > div {
     display: none;
   }
@@ -869,6 +915,7 @@
   display: flex;
   align-items: center;
   gap: 25px;
+  
 }
 
 @media (max-width: 768px) {
@@ -905,6 +952,29 @@
 }
 
 /* Main Navigation Styling */
+
+.nav-item {
+  position: relative; 
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  width: 8px;      
+  height: 8px;      
+  background-color: #00aaff; 
+  border-radius: 50%;
+  bottom: -10px;   
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;      
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav-item:hover::after {
+  opacity: 1; 
+} 
+
 .mainnav {
   background-color: #02173d;
   padding: 4px 137px;
@@ -1233,12 +1303,13 @@
 /* (Tablets and Smaller Desktops) */
 @media (max-width: 1024px) {
   .homecontainer {
-    height: auto;
+    height: 666px !important;
   }
 
   .Homepage {
     padding: 20px;
     justify-content: flex-start;
+    align-items: center;
   }
 
   .Homepage h1 {
@@ -1261,12 +1332,13 @@
 /* (Mobile Devices) */
 @media (max-width: 768px) {
   .homecontainer {
-    height: auto;
+    height: 666px !important;
   }
 
   .Homepage {
     padding: 20px;
-    justify-content: flex-start;
+    justify-content: baseline;
+    align-items: baseline;
   }
 
   .Homepage h1 {
@@ -1290,7 +1362,7 @@
 /* (Small Mobile Devices) */
 @media (max-width: 480px) {
   .homecontainer {
-    height: auto;
+    height: 666px !important;
   }
 
   .Homepage {
@@ -1360,6 +1432,8 @@
   top: 680px;
   width: 100%;
 }
+
+
 .propmainwrap {
   display: flex;
   justify-content: center;
@@ -1466,7 +1540,7 @@
 
 @media (max-width: 1024px) {
   .propwrap {
-    flex-direction: row;
+    flex-direction: column;
     gap: 5px;
   }
 }
@@ -1516,18 +1590,21 @@
 
 @media (max-width: 1024px) {
   .property-search {
-    top: 400px;
+    top: 600px;
+    width: 90%;
   }
 }
 
 @media (max-width: 768px) {
   .property-search {
-    top: 350px;
+    top: 400px;
+    width: 90%;
   }
 }
 
 @media (max-width: 480px) {
   .property-search {
-    top: 330px;
+    top: 370px;
+    width: 90%;
   }
 }
