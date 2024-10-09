@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive web</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="top-bar">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="address">
+          <i class="fas fa-map-marker-alt"></i> 1056 Wayside Lane, Defuniak
+          Springs, Florida, USA
+        </div>
+        <div class="language-login">
+          <div class="dropdown">
+            <img src="assets/download.png" alt="" class="flag" />
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              type="button"
+              id="languageDropdown"
+              data-toggle="dropdown"
+            >
+              English
+            </button>
+            <div class="dropdown-menu" aria-labelledby="languageDropdown">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Spanish</a>
+            </div>
+          </div>
+          <button class="btn-outline-primary">Log in</button>
+          <span class="notmember">Not a member?</span>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar-custom">
+      <div class="mainnav">
+        <div class="logo" style="padding: 10px 0px">
+          <img src="assets/Capa 1.png" alt="Logo" />
+        </div>
+        <button
+          class="hamburger"
+          id="hamburger-btn"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        <div class="nav-items" id="nav-menu">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Properties</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <button class="nav-btn">
+            <img src="assets/Frame 28186368.png" alt="" />
+            Add Property
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="homecontainer">
+      <div class="Homepage">
+        <div class="container">
+          <div
+            style="
+              align-items: start;
+              max-width: 667px;
+              width: 100%;
+              /* padding-top: 85px; */
+            "
+          >
+            <div class="homeheading">
+              Find Your
+              <span style="position: relative"
+                >Dream
+                <img
+                  class="eclips"
+                  src="assets/Ellipse 6.png"
+                  alt=""
+                  style="position: absolute; top: 0px; right: -30px"
+              /></span>
+              Property On
+              <span class="brand"
+                ><img src="assets/Frame 28186495.svg" alt=""
+              /></span>
+            </div>
+            <div class="homepara">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div class="underline"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="propmainwrap">
+      <div class="property-search">
+        <div class="search-options">
+          <button class="btn active">Buy</button>
+          <button class="btn">Rent</button>
+        </div>
+        <div class="search-form">
+          <div class="propwrap">
+            <div class="form-group">
+              <label for="location">Location</label>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  border-right: 2px solid #00bff3;
+                "
+              >
+                <img
+                  src="assets/Vector (5).png"
+                  alt=""
+                  style="height: 14px; width: 14px"
+                />
+                <select id="location">
+                  <option>1056 Wayside Lane, Defuniak</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="propertyType">Property Type</label>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  border-right: 2px solid #00bff3;
+                "
+              >
+                <img
+                  src="assets/Vector (6).png"
+                  alt=""
+                  style="height: 14px; width: 14px"
+                />
+                <select id="propertyType">
+                  <option>Independent House</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget</label>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  border-right: 2px solid #00bff3;
+                "
+              >
+                <img
+                  src="assets/Vector (7).png"
+                  alt=""
+                  style="height: 14px; width: 14px"
+                />
+                <select id="budget">
+                  <option>$2400 - $10000</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <button class="search-btn">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="featuredproperty">
+      <div class="featurewraper">
+        <div class="featureheading">Featured Properties</div>
+        <div class="featurepara">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor
+        </div>
+        <div class="featurepara">
+          incididunt ut labore et dolore magna aliqua.
+        </div>
+        <div class="underline faeturemargin"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mx-auto my-auto">
+        <div
+          id="recipeCarousel"
+          class="carousel slide w-100"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner w-100" role="listbox">
+            <div class="carousel-item active">
+              <div class="col-md-4">
+                <div class="card card-body">
+                  <div class="card-image">
+                    <img src="assets/Mask group (1).png" alt="Property Image" />
+                  </div>
+                  <div class="card-content">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="sliderheading">The Modern Touch</div>
+                      <div>
+                        <img src="assets/Group 28186085.png" alt="Icon" />
+                      </div>
+                    </div>
+                    <div style="display: flex; gap: 10px">
+                      <img
+                        src="assets/Vector (4).png"
+                        alt="Location Pin"
+                        style="height: 20px; width: 20px"
+                      />
+                      <div class="sliderpara">
+                        1056 Wayside Lane, Defuniak <br />
+                        Springs, Florida, USA.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="col-md-4">
+                <div class="card card-body">
+                  <div class="card-image">
+                    <img src="assets/Mask group (2).png" alt="Property Image" />
+                  </div>
+                  <div class="card-content">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="sliderheading">The Modern Touch</div>
+                      <div>
+                        <img src="assets/Group 28186085 (1).png" alt="Icon" />
+                      </div>
+                    </div>
+                    <div style="display: flex; gap: 10px">
+                      <img
+                        src="assets/Vector (4).png"
+                        alt="Location Pin"
+                        style="height: 20px; width: 20px"
+                      />
+                      <div class="sliderpara">
+                        1056 Wayside Lane, Defuniak <br />
+                        Springs, Florida, USA.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-4">
+                <div class="card card-body">
+                  <div class="card-image">
+                    <img src="assets/Mask group (3).png" alt="Property Image" />
+                  </div>
+                  <div class="card-content">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <di class="sliderheading">The Modern Touch</di>
+                      <div>
+                        <img src="assets/Group 28186085.png" alt="Icon" />
+                      </div>
+                    </div>
+                    <div style="display: flex; gap: 10px">
+                      <img
+                        src="assets/Vector (4).png"
+                        alt="Location Pin"
+                        style="height: 20px; width: 20px"
+                      />
+                      <div class="sliderpara">
+                        1056 Wayside Lane, Defuniak <br />
+                        Springs, Florida, USA.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev w-auto"
+            href="#recipeCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon bg-dark border border-dark rounded-circle"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next w-auto"
+            href="#recipeCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon bg-dark border border-dark rounded-circle"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <button class="propertybutton">View All Property</button>
+    </div>
+
+    <div class="realstateonline">
+      <div class="contentholder">
+        <div class="parawraper">
+          <div class="realstateheading">Real Estate Online</div>
+          <div class="realstatepara">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor <br />
+            incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="underline margins"></div>
+        </div>
+        <div class="holder">
+          <div class="numberwraper">
+            <div class="numberheading">12k+</div>
+            <div class="numberpara">
+              Newly Listed <br />
+              Propertes
+            </div>
+          </div>
+          <div class="numberwraper">
+            <div class="numberheading">10k+</div>
+            <div class="numberpara">Happy Clients</div>
+          </div>
+          <div class="numberwraper">
+            <div class="numberheading">103+</div>
+            <div class="numberpara">Featured Properties</div>
+          </div>
+        </div>
+      </div>
+      <img class="masklines1" src="assets/Mask group.png" alt="" />
+    </div>
+
+    <div class="container">
+      <div class="findpropertywrapper">
+        <div class="findpropertyheading">Find Your Properties</div>
+        <div class="findpropertypara">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod <br />
+          tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <div class="underline"></div>
+      </div>
+      <div class="imagewrappr">
+        <div class="imageholder1">
+          <img src="assets/pexels-max-vakhtbovych-7031406 1.png" alt="" />
+          <div class="buy-overlay">Buy</div>
+        </div>
+        <div class="imageholder2">
+          <img src="assets/pexels-chris-goodwin-32870 2.png" alt="" />
+          <div class="buy-overlay">Buy</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container contactmargin">
+      <div class="reachoutwrapper">
+        <div class="reachoutform">
+          <div class="form-container">
+            <form>
+              <div class="fieldmargin">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+
+              <div class="fieldmargin">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Enter phone number"
+                />
+              </div>
+
+              <div class="fieldmargin">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="johndoe@gmail.com"
+                />
+              </div>
+
+              <div class="fieldmargin">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="textareaheight"
+                  id="message"
+                  rows="4"
+                  placeholder="Enter your message"
+                ></textarea>
+              </div>
+
+              <div class="text-end">
+                <button type="submit" class="btn btn-light">SEND</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="reachouttext">
+          <div class="reachoutheading">Reach Out</div>
+          <div class="reachoutpara">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="underline"></div>
+        </div>
+        <img class="contactimage" src="assets/Group (1).png" alt="" />
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footermain">
+        <div class="row">
+          <div class="col-xl-3 col-lg-6 col-md-6">
+            <img src="assets/Layer 2.png" alt="" style="width: auto" />
+            <p class="footpara">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl
+              dictumst elit mauris, nunc mauris aliquam facilisi ut cras.
+            </p>
+          </div>
+          <div class="col-xl-2 col-lg-6 col-md-6">
+            <h5>Company</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Buy</a></li>
+              <li><a href="#">Rent</a></li>
+              <li><a href="#">Properties</a></li>
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-6 col-md-6 mb-4">
+            <h5>Other</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Article</a></li>
+              <li><a href="#">Broker</a></li>
+              <li><a href="#">Advertise</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-6 col-md-6 mb-4">
+            <h5>Company</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Chat Support</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+            <h5>Follow Us On</h5>
+            <div class="social-icons">
+              <a href="#"><img src="assets/Social Icons.png" alt="" /></a>
+              <a href="#"><img src="assets/Social Icons (1).png" alt="" /></a>
+              <a href="#"><img src="assets/Social Icons (2).png" alt="" /></a>
+              <a href="#"><img src="assets/Social Icons (3).png" alt="" /></a>
+            </div>
+            <div class="followheading">
+              <img src="assets/Vector (3).png" alt="" />
+              Our Location
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing elit, sed do.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 follow">
+            <p>&copy; 2022 Buzo. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./javascript/slider.js"></script>
+    <script src="./javascript/toggle.js"></script>
+
+  </body>
+</html>
