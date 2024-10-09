@@ -160,7 +160,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("./assets/Group\ 32.png");
+  background-image: url("../assets/Group\ 32.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -239,7 +239,7 @@
 
 .reachoutform {
   width: 40%;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   z-index: 1;
 }
 
@@ -720,7 +720,7 @@
   line-height: 33px;
   font-weight: 400;
   color: #7a8897;
-  max-width: 650px;
+  max-width: 680px;
   text-align: center;
 }
 
@@ -828,6 +828,10 @@
 
 .card-content {
   padding: 30px;
+  background-color: #FAFAFA;
+}
+.activecolor{
+  background-color: white !important;
 }
 
 @media (max-width: 1024px) {
@@ -899,6 +903,27 @@
   margin-bottom: 80px;
 }
 
+@media (max-width: 1024px) {
+  .propertybutton {
+    margin-top: 50px;
+  margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .propertybutton {
+    margin-top: 35px;
+  margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .propertybutton {
+    margin-top: 25px;
+  margin-bottom: 25px;
+  }
+}
+
 /* Top Bar Styling */
 .top-bar {
   background-color: white;
@@ -937,6 +962,7 @@
   line-height: 20px;
   padding: 8px 16px;
   border: 1px solid #02173d;
+  border-radius: 5px;
 }
 
 .notmember {
@@ -1442,11 +1468,12 @@
 .search-options {
   display: flex;
   justify-content: flex-start;
-  gap: 10px;
+  /* gap: 10px; */
+  
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 10px 25px;
   border: none;
   background-color: #f0f0f0;
   cursor: pointer;
